@@ -51,7 +51,7 @@ app.put('/repositories/:id', (request, response) => {
   );
 
   if (findRepository === -1) {
-    return response.status(400).json({ error: 'Repository does not exists' });
+    return response.status(400).json({ error: 'Repository does not exist' });
   }
 
   const repository = {
